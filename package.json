@@ -1,0 +1,27 @@
+{
+  "name": "css-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaydencc/css-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khaydencc/css-test/issues"
+  },
+  "homepage": "https://github.com/khaydencc/css-test#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.3.1",
+    "sass": "^1.34.1"
+  }
+}
