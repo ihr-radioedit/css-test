@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CSS Questions</title>
+        <link rel="stylesheet" href="scss/styles.scss" />
+    </head>
+    <body>
+        <header>
+            <h1>General CSS Knowledge</h1>
+        </header>
+        <main class="questions">
+            <details>
+                <summary>What is specificity?</summary>
+                <blockquote>
+                    <p>
+                        Specificity is a weight that is applied to a given CSS
+                        declaration, determined by the number of each selector
+                        type in the matching selector. When multiple
+                        declarations have equal specificity, the last
+                        declaration found in the CSS is applied to the element.
+                        Specificity only applies when the same element is
+                        targeted by multiple declarations. As per CSS rules,
+                        directly targeted elements will always take precedence
+                        over rules which an element inherits from its ancestor.
+                    </p>
+                </blockquote>
+            </details>
+            <details>
+                <summary>What is a pseudo class?</summary>
+                <blockquote>
+                    <p>
+                        a keyword added to a selector that specifies a special
+                        state of the selected element(s).
+                    </p>
+                    <p>Some examples:</p>
+                    <code class="full">
+                        <ul>
+                            <li>:hover</li>
+                            <li>:visited</li>
+                            <li>:focus</li>
+                            <li>:blur</li>
+                            <li>:disabled</li>
+                            <li>:nth-child</li>
+                            <li>:first-child</li>
+                        </ul>
+                    </code>
+                    <p>
+                        For Reference:
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#alphabetical_index"
+                            target="_blank"
+                            >MDN Docs</a
+                        >
+                    </p>
+                </blockquote>
+            </details>
+            <details>
+                <summary>What is a pseudo element?</summary>
+                <blockquote>
+                    <p>
+                        a keyword added to a selector that lets you style a specific part of the selected element.
+                    </p>
+                    <p>Some examples:</p>
+                    <code class="full">
+                        <ul>
+                            <li>::before</li>
+                            <li>::after</li>
+                            <li>::placeholder</li>
+                        </ul>
+                    </code>
+                    <p>
+                        For Reference:
+                        <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index"
+                                target="_blank"
+                        >MDN Docs</a
+                        >
+                    </p>
+                </blockquote>
+            </details>
+            <details>
+                <summary>What is the difference between <code>display: none</code> and <code>visibility: hidden</code>?</summary>
+                <blockquote>
+                    <p>
+                        <code>display: none</code> will hide the element but also remove it from the document layout
+                    </p>
+                    <p>
+                        <code>visibility: hidden</code> will hide the element, but it still has space allocated in the document layout
+                    </p>
+                </blockquote>
+            </details>
+            <details>
+                <summary>Descirbe different ways you might implement media queries and why</summary>
+                <blockquote>
+                    <p>
+                        Some possible answers:
+                    </p>
+                    <ul>
+                        <li>
+                            using breakpoints to alter page layout (1 column to multi-colum, for example)
+                        </li>
+                        <li>
+                            using orientation (landscape vs portrait)
+                        </li>
+                        <li>
+                            using <code>hover: none</code> to determine if you're on a touch screen<br>
+                            or <code>hover: hover</code> to determine if you're on a desktop
+                        </li>
+                        <li>
+                            using prefers-color-scheme for dark mode
+                        </li>
+                    </ul>
+                    <p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#media_features" target="_blank">MDN Docs</a>
+                    </p>
+                </blockquote>
+            </details>
+            <details>
+                <summary>Describe a situation where you might need to use CSS Custom Properties (css vars)</summary>
+                <blockquote>
+                    <p>some possible answers</p>
+                    <ul>
+                        <li>to easily change a value (color, width, etc) across the app (i.e. theming)</li>
+                        <li>to be able to set/override values at a higher level [ADD EXAMPLE]</li>
+                        <li>to change values inside media queries</li>
+                    </ul>
+                </blockquote>
+            </details>
+            <details>
+                <summary>
+                    <p>What is the difference between these colors?</p>
+                    <p>
+                        <code>#ff0000</code><br>
+                        <code>#ff00007F</code><br>
+                        <code>rgba(255, 0, 0, 0.5)</code>
+                    </p>
+                </summary>
+                <blockquote>
+                    <p>
+                        first is rgb red in hex<br>
+                        second is rgb red at 50% alpha in hex<br>
+                        third is also red at 50% alpha using rgba
+                    </p>
+                </blockquote>
+            </details>
+            <!--<details>
+                <summary>QUESTIONGOESHERE</summary>
+                <blockquote>
+                    <p>ANSWERGOESHERE</p>
+                </blockquote>
+            </details>-->
+        </main>
+        <footer>
+            <h3>Links</h3>
+            <ul class="unstyled-list">
+                <li>
+                    <a href="generalcss.html">General CSS Knowledge</a>
+                </li>
+                <li>
+                    <a href="advancedcss.html">Advanced CSS</a>
+                </li>
+                <li>
+                    <a href="sass.html">SASS/SCSS</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
