@@ -1,0 +1,87 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: aliceblue;
+    color: #0e0e3e;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 2rem;
+    line-height: 1.8em;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+
+    > * {
+        padding: 0 3rem;
+    }
+}
+
+a {
+    &:visited {
+        color: inherit;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.unstyled-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+}
+
+main {
+    ul {
+        display: flex;
+        flex-direction: column;
+        column-gap: 2rem;
+    }
+
+    &.questions {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+}
+
+footer {
+    ul {
+        display: flex;
+        column-gap: 2rem;
+        font-size: 0.8em;
+    }
+}
+
+details {
+    border-bottom: 0.2rem solid #1919702F;
+    padding-bottom: 3rem;
+
+    summary {
+        cursor: pointer;
+    }
+
+    code {
+        background-color: #bbbbbb3f;
+        padding: 1px 1ch;
+
+        &.full {
+            display: inline-block;
+            width: 100%;
+            white-space: pre;
+        }
+    }
+
+    blockquote {
+        background-color: #ffffff;
+        padding: 2rem;
+        margin: 1rem 2rem;
+    }
+}
